@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 9 - Mirova Arina</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id='hamburger'>
+            <div id="left-info">
+                <div>Size: <span id='size-info'></span></div>
+                <div>Stuffing: <span id='stuffing-info'></span></div>
+                <div>Toppings: <ul id='topping-info'></ul></div>
+                <div>Price: <span id='price-info'></span></div>
+                <div>Calories: <span id='calories-info'></span></div>
+            </div>
+            <div id='buttons'>
+                <button id='new-hamburger'>New hamburger</button>
+                <button id='add-topping'>Add topping</button>
+                <button id='remove-topping'>Remove topping</button>
+            </div>
+        </div>
+        
+        <div class="popup" id='popup-hamburger' style="display: none">
+            <label>
+                Select size:
+                <select id='hamburger-size'>
+                    <option value="large">Large</option>
+                    <option value="small">Small</option>
+                </select>
+            </label>            
+                
+            <label>
+                Select stuffing:
+                <select id='hamburger-stuffing'>
+                    <option value="cheese">Cheese</option>
+                    <option value="salad">Salad</option>
+                    <option value="potato">Potato</option>
+                </select>
+            </label>
+            
+            <button id="new-hamb">Create</button>
+        </div>
+        
+        <div class="popup" id='popup-topping' style="display: none">
+            <label>
+                Select topping:
+                <select id='hamburger-topping'>
+                    <option value="mayo">Mayo</option>
+                    <option value="spice">Spice</option>
+                </select>
+            </label>
+            
+            <button id="add-topp">Add</button>
+        </div>
+        
+        <div class="popup" id='popup-topping-rm' style="display: none">
+            <label>
+                Select topping:
+                <select id='hamburger-topping-rm'>
+                    <option value="mayo">Mayo</option>
+                    <option value="spice">Spice</option>
+                </select>
+            </label>
+            
+            <button id="remove-topp">Remove</button>
+        </div>
+        
+        <script src="hamburger_es2015.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
